@@ -22,7 +22,7 @@ void sort_selected(int array[], int length) {
 
 }
 
-
+// O(N)
 string search_for_duplicates(int array[], int length) {
 	string result = "";
 	int t = 0;
