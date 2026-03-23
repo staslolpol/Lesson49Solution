@@ -43,3 +43,29 @@ void sort_selected(int array[], int length) {
 }
 
 
+void sort_inserted(int array[], int length) {
+
+	int cout_inner = 0;
+	int cout_outer = 0;
+
+
+	for (int i = 1; i < length; i++)
+	{
+		cout_inner++;
+		int key = array[i];
+		int j = i - 1;
+
+		while (j >= 0 && array[j] > key) {
+			array[j + 1] = array[j];
+			j--;
+		
+		}
+
+		array[j + 1] = key;
+
+	}
+
+	cout << "\n Is cout_inner " << cout_inner << endl;
+
+	cout << " Is cout_outer " << cout_outer << endl;
+}
