@@ -34,6 +34,5 @@ string search_for_duplicates(int array[], int length) {
 
 		}
 	}
-
 	return result;
 }
